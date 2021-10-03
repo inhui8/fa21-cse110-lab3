@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group Meeting</title>
+    <link rel="icon" href="3333.jpg" type="image/jpg">
 </head>
 <body>
-    <header><h1>Meeting Minutes for CSE110</h1></header>
-    <h2>October 02, 2021</h2>
+    <header>
+    <div>navigate to each section</div>
+
+    <nav>
+        <ul>
+            <li><a href="#attendent list">attendent list</a></li>
+            <li><a href="#agenda list">agenda list</a></li>
+            <li><a href="#unfinished business">unfinished business</a></li>
+            <li><a href="#new business">new business</a></li>
+            <li><a href="#group distribute">group distribute</a></li>
+            <li><a href="#Group meeting video">Group meeting video</a></li>
+            <li><a href="#Group meeting audio">Group meeting audio</a></li>
+        </ul>
+    </nav>
+    </header>
+    <br>
+    
 
     <main></main>
-        <h3>attendent list</h3>
+        <h1>Meeting Minutes for CSE110</h1>
+        <h2>October 02, 2021</h2>
+        <section>
+        <h3 id="attendent list">attendent list</h3>
         <ol>
             <li><input type="checkbox" /> Jeff</li>
             <li><input type="checkbox" /> Max</li>
@@ -20,8 +39,10 @@
             <li><input type="checkbox" /> Cindy</li>
             <li><input type="checkbox" /> Jack</li>
         </ol>
-        <br>
-        <h3>agenda list</h3>
+        </section>
+
+        <section>
+        <h3 id="agenda list">agenda list</h3>
         <ul>
             <li>choose project</li>
             <li>choose program language</li>
@@ -29,21 +50,33 @@
             <li>project due day</li>
             <li>summarize</li>
         </ul>
+        </section>
+
         <br>
-        <h3>things that were unfinished business from last meeting</h3>
+        <section>
+        <h3 id="unfinished business"><i>things that were unfinished business from last meeting</i></h3>
         <p>since last time we did not dicide which project we want to use,
-         so we will decide a target project today</p>
+         so we will decide a <b class="term"> project today </b></p>
         <br>
-        <h3>things that are new business that need to be talked about</h3>
-        <p>we need to talk about the target project and which language we 
-        need to use. Also we divide the task to the small group, and decide 
-        the project due day.</p>
+        <h3 id="new business">things that are new business that need to be talked about</h3>
+        <p><span>we need to talk about the target project</span> and which <b class="term">programming language</b> we 
+        need to use. <strong> we divide the task to the small group, and decide the project due day.</strong></p>
+        </section>
+
         <br>
         <hr>
         <h3>Questions</h3>
-        <p>How to devide into small groups</p>
+        <p><em> how to devide into small groups</em></p>
+        <fieldset>
+            <legend>Leave your questions and names here</legend>
+            <textarea cols="100" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </fieldset>
+        <br>
+
         <details>
-            <summary>group distribute</summary>
+            <summary id="group distribute">group distribute</summary>
             <ol>
                 <li>Max, Marry</li>
                 <li>Jeff, Kevin</li>
@@ -51,22 +84,52 @@
             </ol>
         </details>
         <br>
+
         <img src="qqq.jpg" alt="group and task assign" width="850" height="500"/>
         <hr>
-        <h3>Group meeting video</h3>
+        <h3 id="Group meeting video">Group meeting video</h3>
         <video width="850" height="500" controls>
             <source src="2.mp4" type="video/mp4">
         </video>
         <hr>
-        <h3>Group meeting audio</h3>
+        <h3 id="Group meeting audio">Group meeting audio</h3>
         <audio controls>
             <source src="1.mp3" type="audio/mp3">
         </audio>
-    <footer>
-        <h3>Leave any Questions and name</h3>
-        <textarea cols="100" rows="10"></textarea>
+
         <br>
-        <input type="submit">
+        <hr>
+        <form>
+            <label>Choose next meeting area:</label>
+            <input list="Area">
+            <datalist id="Area">
+                <option value="Center hall 1999">
+                <option value="UCSD library first floor">
+                <option value="Warren hall 2001">
+            </datalist>
+            <input type="submit">
+        </form>
+        <br>
+        <hr>
+
+        <label>Choose next meeting time:</label>
+        <select name="time" id="time">
+            <option value="9:00 am">9:00 am</option>
+            <option value="11:00 am">11:00 am</option>
+            <option value="3:00 pm">3:00 pm</option>
+            <option value="6:00 pm">9:00 pm</option>
+        </select>
+        <button>Submit</button>
+        <br>
+        <hr>
+
+    <footer>
+        <h3>if you can not participate for next meeting, please leave your name</h3>
+        <form onsubmit="alert('leave name')">
+        <input type="text" placeholder="Enter your name" />
+        <button>Submit</button>
+        </form>
+
     </footer>
 </body>
 </html>
