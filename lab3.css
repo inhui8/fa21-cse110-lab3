@@ -23,10 +23,7 @@ body{
     padding-left: 2px;
     padding-right: 20px;
     padding-bottom: 2ex;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    flex-direction: column; 
+    
     
 }
 .box-3{
@@ -37,9 +34,61 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 10px;
-    justify-items:flex-end;
+   
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav{
+    border-style:groove;
+    border-color: deepskyblue;
+    border-width: 1cm;
+    border-radius: 1%;
+    width: 70%;
+    margin: 10px 10px 10px 10px;
+    padding: 1pc 1pc 1pc 1pc;
+}
+
+
+/*Pesudo-class selector*/
+a:hover {
+    color:orange;
+}
+
+a:active {
+    color:red;
+}
+/*child combinator*/
+footer > section{
+    display: none;
+}
+
+ 
+/*selector list*/
+p, label {
+    color:rgb(129, 63, 205);
+}
+
+/* changed all the label in form to orange, Descendant Combinator */
+body h3 {
+    color: rgb(17, 0, 255);
+}
+/*Adjacent sibling combinator*/
+h1 + h2{
+    text-decoration: underline;
+}
+/*General sibling combinator */
+section ~ h3{
+    font-size: medium;
+}
+/*Attribute Selector */
+a[target]{
+    background-color: aqua;
+}
+/*Combining Two Selectors*/
+section.box-3{
+    text-decoration: underline;
 }
