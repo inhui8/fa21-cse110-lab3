@@ -64,7 +64,6 @@ nav{
     min-width: 30%;
 }
 .image2{
-    position: -webkit-sticky;
     position: sticky;
     top: 200px;
     left: 800px;
