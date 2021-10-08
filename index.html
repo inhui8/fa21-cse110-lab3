@@ -7,6 +7,17 @@
     <title>Group Meeting</title>
     <link rel="icon" href="3333.jpg" type="image/jpg">
     <link rel=" stylesheet" type="text/css" href="lab3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <style> 
+    .list {
+        display: inline-block;
+        padding: 2px;
+    }
+    </style> 
 </head>
 <body>
     <header>
@@ -14,63 +25,74 @@
 
     <nav>
         <ul>
-            <li><a href="#attendent">attendent list</a></li>
-            <li><a href="#agenda">agenda list</a></li>
-            <li><a href="#UnfinishedBusiness">unfinished business</a></li>
-            <li><a href="#NewBusiness">new business</a></li>
-            <li><a href="#GroupDistribute">group distribute</a></li>
-            <li><a href="#video">Group meeting video</a></li>
-            <li><a href="#audio">Group meeting audio</a></li>
+            <li class="list"><a href="#attendent" target="_blank">attendent list</a></li>
+            <li class="list"><a href="#agenda"target="_blank">agenda list</a></li>
+            <li class="list"><a href="#UnfinishedBusiness" target="_blank">unfinished business</a></li>
+            <li class="list"><a href="#NewBusiness" target="_blank">new business</a></li>
+            <li class="list"><a href="#GroupDistribute" target="_blank">group distribute</a></li>
+            <li class="list"><a href="#video" target="_blank">Group meeting video</a></li>
+            <li class="list"><a href="#audio" target="_blank">Group meeting audio</a></li>
         </ul>
     </nav>
     </header>
     <br>
     
 
-    <main></main>
+    <main>
         <h1>Meeting Minutes for CSE110</h1>
-        <h2>October 02, 2021</h2>
-        <section>
-        <h3 id="attendent">attendent list</h3>
-        <ol>
-            <li><input type="checkbox" /> Jeff</li>
-            <li><input type="checkbox" /> Max</li>
-            <li><input type="checkbox" /> Kevin</li>
-            <li><input type="checkbox" /> Marry</li>
-            <li><input type="checkbox" /> Cindy</li>
-            <li><input type="checkbox" /> Jack</li>
-        </ol>
+        <h2 style="color: blueviolet; text-align: center;">October 02, 2021</h2>
+        <img class="image2" src="123.gif" alt="cherr" width="200" height="200"/>
+        <section class="box-1">
+            <h3 id="attendent">attendent list</h3>
+            <ol>
+                <li><input type="checkbox" /> Jeff</li>
+                <li><input type="checkbox" /> Max</li>
+                <li><input type="checkbox" /> Kevin</li>
+                <li><input type="checkbox" /> Marry</li>
+                <li><input type="checkbox" /> Cindy</li>
+                <li><input type="checkbox" /> Jack</li>
+            </ol>
+        
         </section>
-
-        <section>
-        <h3 id="agenda">agenda list</h3>
-        <ul>
-            <li>choose project</li>
-            <li>choose program language</li>
-            <li>assign tasks by individual</li>
-            <li>project due day</li>
-            <li>summarize</li>
-        </ul>
+    
+        
+        <section class="box-1">
+            <h3 id="agenda">agenda list</h3>
+            <ul>
+                <li>choose project</li>
+                <li>choose program language</li>
+                <li>assign tasks by individual</li>
+                <li>project due day</li>
+                <li>summarize</li>
+            </ul>
         </section>
-
+    
+        
         <br>
-        <section>
-        <h3 id="UnfinishedBusiness"><i>things that were unfinished business from last meeting</i></h3>
-        <p>since last time we did not dicide which project we want to use,
-         so we will decide a <b class="term"> project today </b></p>
-        <br>
-        <h3 id="NewBusiness">things that are new business that need to be talked about</h3>
-        <p><span>we need to talk about the target project</span> and which <b class="term">programming language</b> we 
-        need to use. <strong> we divide the task to the small group, and decide the project due day.</strong></p>
+        <section class="box-3">
+            <h3 id="UnfinishedBusiness"><i>things that were unfinished business from last meeting</i></h3>
+            <p>since last time we did not dicide which project we want to use,
+            so we will decide a <b class="term"> project today </b></p>
+            <br>
+        </section>
+        <section class="box-3">
+            <h3 id="NewBusiness">things that are new business that need to be talked about</h3>
+            <p><span>we need to talk about the target project</span> and which <b class="term">programming language</b> we 
+            need to use. <strong> we divide the task to the small group, and decide the project due day.</strong></p>
+        </section>
+        <section class="box-3">
+            <img src="222.gif" alt="meeting" width="850" height="500" style="max-width: 90%; min-width: 30%;"/>
+            <img src="111.gif" alt="meeting" width="850" height="500" style="max-width: 90%; min-width: 30%;"/>
         </section>
 
         <br>
         <hr>
+        
         <h3>Questions</h3>
         <p><em> how to devide into small groups</em></p>
-        <fieldset>
+        <fieldset style="max-width: 90%; min-width: 30%;">
             <legend>Leave your questions and names here</legend>
-            <textarea cols="100" rows="10"></textarea>
+            <textarea style="width: 300px; height: 300px; "></textarea>
             <br>
             <input type="submit">
         </fieldset>
@@ -85,11 +107,11 @@
             </ol>
         </details>
         <br>
-
-        <img src="qqq.jpg" alt="group and task assign" width="850" height="500"/>
+            
+        <img class="image1" src="qqq.jpg" alt="group and task assign" width="850" height="500"/>
         <hr>
         <h3 id="video">Group meeting video</h3>
-        <video width="850" height="500" controls>
+        <video controls width="850" height="500"  style="max-width: 90%; min-width: 30%;">
             <source src="2.mp4" type="video/mp4">
         </video>
         <hr>
@@ -97,7 +119,7 @@
         <audio controls>
             <source src="1.mp3" type="audio/mp3">
         </audio>
-
+    
         <br>
         <hr>
         <form>
@@ -123,14 +145,16 @@
         <button>Submit</button>
         <br>
         <hr>
-
+    </main>
     <footer>
         <h3>if you can not participate for next meeting, please leave your name</h3>
         <form onsubmit="alert('leave name')">
         <input type="text" placeholder="Enter your name" />
         <button>Submit</button>
         </form>
-
+        <section>
+            <h3>this page made by Yinghui Sun</h3>
+        </section>
     </footer>
 </body>
 </html>
