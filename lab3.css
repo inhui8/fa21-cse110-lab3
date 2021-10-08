@@ -103,7 +103,7 @@ section ~ h3{
 }
 /*Attribute Selector */
 a[target]{
-    background-color: aqua;
+    background-color: #00ffff;
 }
 /*Combining Two Selectors*/
 section.box-3{
