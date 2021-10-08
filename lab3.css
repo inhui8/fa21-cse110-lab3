@@ -102,3 +102,11 @@ h1 + h2{
 section ~ h3{
     font-size: medium;
 }
+/*Attribute Selector */
+a[target]{
+    background-color: aqua;
+}
+/*Combining Two Selectors*/
+section.box-3{
+    text-decoration: underline;
+}
